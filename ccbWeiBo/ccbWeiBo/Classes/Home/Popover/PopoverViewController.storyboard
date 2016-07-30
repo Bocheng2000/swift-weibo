@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bX7-KC-VJJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Popover View Controller-->
+        <scene sceneID="cd5-C4-xea">
+            <objects>
+                <viewController id="bX7-KC-VJJ" customClass="PopoverViewController" customModule="ccbWeiBo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u5b-yA-dhY"/>
+                        <viewControllerLayoutGuide type="bottom" id="qrX-D0-fg7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="feC-LR-M7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popover_background" translatesAutoresizingMaskIntoConstraints="NO" id="eW8-GY-sYc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Anh-Ie-h6H">
+                                <rect key="frame" x="20" y="20" width="560" height="560"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qrX-D0-fg7" firstAttribute="top" secondItem="eW8-GY-sYc" secondAttribute="bottom" id="7GM-RZ-pL9"/>
+                            <constraint firstAttribute="trailing" secondItem="Anh-Ie-h6H" secondAttribute="trailing" constant="20" id="FMP-pt-JJW"/>
+                            <constraint firstItem="Anh-Ie-h6H" firstAttribute="top" secondItem="feC-LR-M7Y" secondAttribute="top" constant="20" id="PQw-Cw-qms"/>
+                            <constraint firstAttribute="trailing" secondItem="eW8-GY-sYc" secondAttribute="trailing" id="RNA-0P-zsx"/>
+                            <constraint firstItem="qrX-D0-fg7" firstAttribute="top" secondItem="eW8-GY-sYc" secondAttribute="bottom" id="SBs-yT-RfV"/>
+                            <constraint firstItem="eW8-GY-sYc" firstAttribute="top" secondItem="feC-LR-M7Y" secondAttribute="top" id="bqO-3o-SWA"/>
+                            <constraint firstItem="eW8-GY-sYc" firstAttribute="leading" secondItem="feC-LR-M7Y" secondAttribute="leading" id="hmm-6q-GSg"/>
+                            <constraint firstItem="eW8-GY-sYc" firstAttribute="top" secondItem="u5b-yA-dhY" secondAttribute="bottom" id="itl-xF-Ym5"/>
+                            <constraint firstItem="eW8-GY-sYc" firstAttribute="leading" secondItem="feC-LR-M7Y" secondAttribute="leading" id="onx-jQ-MIm"/>
+                            <constraint firstItem="Anh-Ie-h6H" firstAttribute="leading" secondItem="feC-LR-M7Y" secondAttribute="leading" constant="20" id="p9n-nJ-dff"/>
+                            <constraint firstItem="qrX-D0-fg7" firstAttribute="top" secondItem="Anh-Ie-h6H" secondAttribute="bottom" constant="20" id="sDV-nI-B2D"/>
+                            <constraint firstAttribute="trailing" secondItem="eW8-GY-sYc" secondAttribute="trailing" id="vO1-fq-2g9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="itl-xF-Ym5"/>
+                                <exclude reference="onx-jQ-MIm"/>
+                                <exclude reference="vO1-fq-2g9"/>
+                                <exclude reference="SBs-yT-RfV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Wa-7H-rsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="406" y="-1455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="popover_background" width="217" height="49"/>
+    </resources>
+</document>
